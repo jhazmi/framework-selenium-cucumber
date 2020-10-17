@@ -79,17 +79,17 @@ public abstract class AbstractPage implements SectionObject {
 		WebDriverWait wait = new WebDriverWait(jsWaitDriver, 15);
 		JavascriptExecutor jsExec = (JavascriptExecutor) jsWaitDriver;
 
-		// Wait for Javascript to load
+		// Wait for JavaScript to load
 		ExpectedCondition<Boolean> jsLoad = driver -> ((JavascriptExecutor) jsWaitDriver)
 				.executeScript("return document.readyState").toString().equals("complete");
 
 		// Get JS is Ready
 		boolean jsReady = (Boolean) jsExec.executeScript("return document.readyState").toString().equals("complete");
 
-		// Wait Javascript until it is Ready!
+		// Wait JavaScript until it is Ready!
 		if (!jsReady) {
 			System.out.println("JS in NOT Ready!");
-			// Wait for Javacript to load
+			// Wait for JavaScript to load
 			wait.until(jsLoad);
 		} else {
 			System.out.println("JS is Ready!");
