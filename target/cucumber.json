@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8065263900,
+              "duration": 9257924700,
               "status": "passed"
             },
             "line": 6,
@@ -23,25 +23,44 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 115486500,
+              "status": "passed"
             },
             "line": 7,
             "name": "je saisie le nom d utilisateur \"Admin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 32
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDUtilisateur(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 63096700,
+              "status": "passed"
             },
             "line": 8,
             "name": "je saisie le mot de passe \"admin123\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 27
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 12252393100,
+              "status": "passed"
             },
             "line": 9,
             "name": "Je clique sur le bouton login",
@@ -52,7 +71,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5156051300,
+              "status": "passed"
             },
             "line": 10,
             "name": "Redirection vers la page Home",
@@ -67,7 +87,7 @@
         "before": [
           {
             "result": {
-              "duration": 11688315200,
+              "duration": 9004310200,
               "status": "passed"
             },
             "match": {
@@ -82,7 +102,7 @@
         "after": [
           {
             "result": {
-              "duration": 3140259900,
+              "duration": 1362203300,
               "status": "passed"
             },
             "match": {
@@ -95,11 +115,14 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 25061968500,
+              "status": "passed"
             },
             "line": 14,
             "name": "je clique sur le module Buzz",
-            "match": {},
+            "match": {
+              "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleBuzz()"
+            },
             "keyword": "When "
           }
         ],
@@ -119,7 +142,7 @@
         "steps": [
           {
             "result": {
-              "duration": 96869598100,
+              "duration": 8845025200,
               "status": "passed"
             },
             "line": 6,
@@ -131,25 +154,44 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 61931400,
+              "status": "passed"
             },
             "line": 7,
             "name": "je saisie le nom d utilisateur \"Admin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 32
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDUtilisateur(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 56268400,
+              "status": "passed"
             },
             "line": 8,
             "name": "je saisie le mot de passe \"admin123\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 27
+                }
+              ],
+              "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 11553814000,
+              "status": "passed"
             },
             "line": 9,
             "name": "Je clique sur le bouton login",
@@ -160,7 +202,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 26423600,
+              "status": "passed"
             },
             "line": 10,
             "name": "Redirection vers la page Home",
@@ -175,7 +218,7 @@
         "before": [
           {
             "result": {
-              "duration": 9080571500,
+              "duration": 8584284300,
               "status": "passed"
             },
             "match": {
@@ -190,7 +233,7 @@
         "after": [
           {
             "result": {
-              "duration": 1580396300,
+              "duration": 1311028700,
               "status": "passed"
             },
             "match": {
@@ -203,11 +246,14 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3529630500,
+              "status": "passed"
             },
             "line": 18,
             "name": "je clique sur le module Temps",
-            "match": {},
+            "match": {
+              "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleTemps()"
+            },
             "keyword": "When "
           }
         ],
