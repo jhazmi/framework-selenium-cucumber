@@ -51,7 +51,7 @@ public class AuthentificationStepDefintion extends CommonMethods {
 	@Then("^Redirection vers la page Home$")
 	public void redirectionVersLaPageHome() throws Throwable {
 		String welcome = AuthentificationPage.welcome.getText();
-		Assert.assertTrue(welcome.contains("Welcome"));
+		Assert.assertTrue(welcome.contains("Wilkommen"));
 		logger.info("Redirection vers la page Home");
 	}
 

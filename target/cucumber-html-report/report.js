@@ -1,50 +1,57 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("authentificationParam/AuthentificationParam.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("authentification/Authentification.feature");
 formatter.feature({
   "line": 2,
-  "name": "Authentification - Param - OrangeHRM",
+  "name": "Authentification - OrangeHRM",
   "description": "En tant que utilisateur je souhaite m authentifier",
-  "id": "authentification---param---orangehrm",
+  "id": "authentification---orangehrm",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@connexion"
     }
   ]
 });
 formatter.before({
-  "duration": 9004310200,
+  "duration": 22340851600,
   "status": "passed"
 });
-formatter.background({
-  "line": 5,
-  "name": "",
+formatter.scenario({
+  "line": 6,
+  "name": "Authentification - OrangeHRM",
   "description": "",
-  "type": "background",
-  "keyword": "Background"
+  "id": "authentification---orangehrm;authentification---orangehrm",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 5,
+      "name": "@cnx"
+    }
+  ]
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "J ouvre l application OrangeHRM",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "je saisie le nom d utilisateur \"Admin\"",
+  "line": 8,
+  "name": "Je saisie userName",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "je saisie le mot de passe \"admin123\"",
-  "keyword": "And "
-});
-formatter.step({
   "line": 9,
-  "name": "Je clique sur le bouton login",
+  "name": "Je saisie mot de passe",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
+  "name": "Je clique sur le bouton login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
   "name": "Redirection vers la page Home",
   "keyword": "Then "
 });
@@ -52,190 +59,39 @@ formatter.match({
   "location": "AuthentificationStepDefintion.jOuvreLApplicationOrangeHRM()"
 });
 formatter.result({
-  "duration": 9257924700,
+  "duration": 119408155200,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Admin",
-      "offset": 32
-    }
-  ],
-  "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDUtilisateur(String)"
+  "location": "AuthentificationStepDefintion.jeSaisieUserName()"
 });
 formatter.result({
-  "duration": 115486500,
+  "duration": 213120100,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "admin123",
-      "offset": 27
-    }
-  ],
-  "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
+  "location": "AuthentificationStepDefintion.jeSaisieMotDePasse()"
 });
 formatter.result({
-  "duration": 63096700,
+  "duration": 97672200,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationStepDefintion.jeCliqueSurLeBoutonLogin()"
 });
 formatter.result({
-  "duration": 12252393100,
+  "duration": 18883116400,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationStepDefintion.redirectionVersLaPageHome()"
 });
 formatter.result({
-  "duration": 5156051300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 13,
-  "name": "Clique - Buzz",
-  "description": "",
-  "id": "authentification---param---orangehrm;clique---buzz",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 12,
-      "name": "@buzz"
-    }
-  ]
-});
-formatter.step({
-  "line": 14,
-  "name": "je clique sur le module Buzz",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleBuzz()"
-});
-formatter.result({
-  "duration": 25061968500,
+  "duration": 45114000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1362203300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 8584284300,
-  "status": "passed"
-});
-formatter.background({
-  "line": 5,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 6,
-  "name": "J ouvre l application OrangeHRM",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "je saisie le nom d utilisateur \"Admin\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "je saisie le mot de passe \"admin123\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "Je clique sur le bouton login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "Redirection vers la page Home",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AuthentificationStepDefintion.jOuvreLApplicationOrangeHRM()"
-});
-formatter.result({
-  "duration": 8845025200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Admin",
-      "offset": 32
-    }
-  ],
-  "location": "AuthentificationParamStepDefinition.jeSaisieLeNomDUtilisateur(String)"
-});
-formatter.result({
-  "duration": 61931400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "admin123",
-      "offset": 27
-    }
-  ],
-  "location": "AuthentificationParamStepDefinition.jeSaisieLeMotDePasse(String)"
-});
-formatter.result({
-  "duration": 56268400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AuthentificationStepDefintion.jeCliqueSurLeBoutonLogin()"
-});
-formatter.result({
-  "duration": 11553814000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AuthentificationStepDefintion.redirectionVersLaPageHome()"
-});
-formatter.result({
-  "duration": 26423600,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "Clique - Temps",
-  "description": "",
-  "id": "authentification---param---orangehrm;clique---temps",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@temps"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "je clique sur le module Temps",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AuthentificationParamStepDefinition.jeCliqueSurLeModuleTemps()"
-});
-formatter.result({
-  "duration": 3529630500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1311028700,
+  "duration": 1694568100,
   "status": "passed"
 });
 });
